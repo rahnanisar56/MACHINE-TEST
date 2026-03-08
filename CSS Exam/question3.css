@@ -1,0 +1,73 @@
+body{
+    font-family: sans-serif;
+}
+.gradient{
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(180deg,rgba(140, 0, 255, 0.515) 0%, rgba(237, 166, 255, 0.77) 50%, rgba(226, 185, 89, 0.8) 100%);
+}
+.container{
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+}
+.login-box{
+    margin: 30px auto;
+    padding:40px 20px;
+    width: 100%;
+}
+h2{
+    color: #e46c3a;
+    font-size: 30px;
+}
+label[for]{
+    font-weight: bold;
+}
+.remember{
+    width: 20px;
+    margin: 10px 0;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.login{
+    width:90%;
+    padding:10px;
+    background:#e46c3a;
+    color:white;
+    border:none;
+    margin:10px auto;
+}
+@media only screen and (max-width:600px){
+    .gradient{
+        display: none;
+    }
+
+    .container{
+        width: 100%;
+    }
+    .login-box{
+        width:100%;
+        padding:20px;
+    }
+
+    h2{
+        font-size:25px;
+        
+    }
+    .login{
+        font-size:16px;
+    }
+
+}
+    
