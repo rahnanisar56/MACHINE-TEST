@@ -7,7 +7,7 @@ body{
     position: fixed;
     top: 0px;
     left: 0px;
-    background: linear-gradient(180deg,rgba(128, 120, 235, 0.679) 0%, rgba(237, 166, 255, 0.77) 50%, rgba(228, 176, 70, 0.658) 100%)
+    background: linear-gradient(to bottom, rgb(90 50 234 / 35%), rgb(201 168 102 / 63%));
 }
 .container{
     width: 50%;
@@ -18,9 +18,8 @@ body{
     background-color: white;
 }
 .login-box{
-    margin: 30px auto;
-    padding:40px 20px;
-    width: 100%;
+    margin-top: 120px;
+    padding:20px 50px;
 }
 h2{
     color: #e46c3a;
@@ -34,19 +33,20 @@ label[for]{
     margin: 10px 0;
 }
 input{
-    width: 90%;
+    width: 100%;
     padding: 10px;
     margin: 10px auto;
     box-sizing: border-box;
 }
 
 .login{
-    width:90%;
+    width:100%;
     padding:10px;
     background:#e46c3a;
     color:white;
     border:none;
     margin:10px auto;
+    font-weight: bold;
 }
 @media only screen and (max-width:600px){
     .gradient{
@@ -57,10 +57,9 @@ input{
         width: 100%;
     }
     .login-box{
-        width:100%;
-        padding:20px;
+        width:80%;
+        margin: 120px auto;
     }
-
     h2{
         font-size:25px;
         
