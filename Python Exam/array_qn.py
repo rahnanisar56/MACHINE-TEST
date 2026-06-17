@@ -7,6 +7,3 @@ search_id = int(input("Enter student ID: "))
 for student in students:
     if student["id"] == search_id:
         print(student["name"])
-        break
-else:
-    print("Student not found")
