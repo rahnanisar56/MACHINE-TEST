@@ -12,14 +12,27 @@ class Calculator:
     def divide(self, a, b):
         if b == 0:
             return "Cannot divide by zero"
-        return a / b
+        else:
+            return a / b
 
 calc = Calculator()
 
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+n1 = float(input("Enter the first number: "))
+n2 = float(input("Enter the second number: "))
 
-print(num1,"+",num2,"=",calc.add(num1,num2))
-print(num1,"-",num2,"=",calc.subtract(num1,num2))
-print(num1,"*",num2,"=",calc.multiply(num1,num2))
-print(num1,"/",num2,"=",calc.divide(num1,num2))
+operation = input("Enter the operation: ")
+
+if operation == "+":
+    print(calc.add(n1, n2))
+
+elif operation == "-":
+    print(calc.subtract(n1, n2))
+
+elif operation == "*":
+    print(calc.multiply(n1, n2))
+
+elif operation == "/":
+    print(calc.divide(n1, n2))
+
+else:
+    print("Invalid operation")
